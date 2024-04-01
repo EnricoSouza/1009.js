@@ -2,11 +2,11 @@ var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 var lines = input.split('\n');
 var prompt = function(texto) { return lines.shift();};
 
-var N = parseInt(prompt());
+var lamppz = parseInt(prompt());
+var i = 2
 
-for (i = 1; i < 10000; i++){
-    
-    if (i % N === 2){
-        console.log(i);
-    }
+while(i < 10000){
+    console.log(i);
+    calculolamppz = lamppz % i === 2
+    i = i + lamppz
 }
