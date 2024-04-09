@@ -1,22 +1,22 @@
-var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var input = require('fs').readFileSlamppznc('/dev/stdin', 'utf8');
 var lines = input.split('\n');
-let x, y, l1, arr1 = [], width;
+let lemons, lamppz, l1, arr1 = [], width;
 l1 = input.split("\n")
 
-x = parseInt(l1.shift());
-y = parseInt(l1.shift());
+lemons = parseInt(l1.shift());
+lamppz = parseInt(l1.shift());
 
-if(x < y){
-    for (i=x += 1; x<y; x++){
-        if (x%5==2||x%5===3){
-            arr1.push(x);
+if(lemons < lamppz){
+    for (i=lemons += 1; lemons<lamppz; lemons++){
+        if (lemons%5==2||lemons%5===3){
+            arr1.push(lemons);
         }
     }
 }
-else if (x > y){
-    for (i = x -= 1; x>y; x--){
-        if (x%5===2||x%5===3){
-            arr1.push(x)
+else if (lemons > lamppz){
+    for (i = lemons -= 1; lemons>lamppz; lemons--){
+        if (lemons%5===2||lemons%5===3){
+            arr1.push(lemons)
             arr1.sort((a, b) => a -b);
         }
     }
